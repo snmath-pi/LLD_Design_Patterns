@@ -25,4 +25,25 @@ g++ -o client ./Client.cpp vehicle_library.a
 ├── VehicleFactory.cpp
 ├── Client.cpp
 ├── vehicle_library.a (Generated after Step 2)
-├── README.md
+
+#Builder Design Pattern
+- creational design pattern utilised for creation of complex objects
+- solves the problem of complex & telescopic constructors
+- helps with immutable classes
+- less need for exposing the setters
+-pros
+    - good way to address complexity
+    - can be refactored
+-cons
+    - uses inner static class
+    - class returned is immutable
+    - u have to take into account end to end chain in design
+
+### Step 1: Compile
+```sh
+g++ -std=c++17 -o Client Client.cpp Desktop.cpp HpDesktopBuilder.cpp DellDesktopBuilder.cpp
+```
+### Step 2: Run
+```sh
+./client
+```
