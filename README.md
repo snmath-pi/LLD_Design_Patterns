@@ -26,7 +26,7 @@ g++ -o client ./Client.cpp vehicle_library.a
 ├── Client.cpp
 ├── vehicle_library.a (Generated after Step 2)
 
-#Builder Design Pattern
+# Builder Design Pattern
 - creational design pattern utilised for creation of complex objects
 - solves the problem of complex & telescopic constructors
 - helps with immutable classes
