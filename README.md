@@ -13,6 +13,9 @@ Follow these steps to compile and run the project:
 ### Step 1: Compile the Source Files
 ```sh
 g++ -c ./Car.cpp ./Bike.cpp ./Vehicle.h ./VehicleFactory.cpp ./Bus.cpp
+```
+### Step 2: Run the code and form library
+```sh
 ar ru vehicle_library.a ./Car.o ./VehicleFactory.o ./Bike.o ./Bus.o
 g++ -o client ./Client.cpp vehicle_library.a
 ./client
