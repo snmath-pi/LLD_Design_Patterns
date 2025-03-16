@@ -1,0 +1,11 @@
+- creational design pattern utilised for creation of complex objects
+- solves the problem of complex & telescopic constructors
+- helps with immutable classes
+- less need for exposing the setters
+-pros
+    - good way to address complexity
+    - can be refactored
+-cons
+    - uses inner static class
+    - class returned is immutable
+    - u have to take into account end to end chain in design
